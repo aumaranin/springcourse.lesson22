@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <title>Hello</title>
+</head>
+<body>
+Привет.<br>
+<a href="/first/goodbye">перейти на страницу goodbye</a><br>
+<a href="/second/exit">перейти на страницу Exit</a><br>
+or <a href="/first/hello?name=Саша&lname=Маранин">перейти на страницу hello с параметрами</a><br>
+<p th:text="${message}" />
+
+<a href="/first/calculator?a=10&b=12&action=addition">Калькулятор с параметрами a = 10 b = 12 action = addition</a><br>
+<a href="/first/calculator?a=10&b=12&action=add">Калькулятор с параметрами a = 10 b = 12 action = add (неверный параметр)</a><br>
+<a href="/first/calculator?a=10&b=0&action=division">Калькулятор с параметрами a = 10 b = 0 action = division (параметр b = 0)</a><br>
+<a href="/first/calculator?b=12&action=addition">Калькулятор с параметрами b = 12 action = addition (нет параметра a)</a><br>
+
+<a href="/first/calculator?a=10&b=12&action=multiplication">Калькулятор с параметрами a = 10 b = 12 action = multiplication</a><br>
+<a href="/first/calculator?a=10&b=12&action=subtraction">Калькулятор с параметрами a = 10 b = 12 action = subtraction</a><br>
+<a href="/first/calculator?a=100&b=25&action=division">Калькулятор с параметрами a = 100 b = 25 action = division</a><br>
+
+
+</body>
+</html>
