@@ -31,4 +31,11 @@ public class PersonDao
     {
         return people.get(id);
     }
+
+    public void save(Person person)
+    {
+        person.setId(people_count++);
+        people.add(person);
+    }
+
 }
